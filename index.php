@@ -3,8 +3,9 @@
 $imagem = "midias/8-f10669e303815db3d317692007924029-1024-1024.webp";
 $titulo = "MacBook Air 15'";
 $resumo = "MacBook Air 15' - M4 - 24GB - 2TB SSD - Meia-noite";
-$valor = 25420.00;
+$valor = 25.316;
 $quantidade = 5;
+$i = 1;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -87,17 +88,20 @@ $quantidade = 5;
           </div>
 
           <div class="row">
+            <?php while($i<=10){ ?>
             <div class="col mt-2">
               <div class="card" style="width: 18rem;">
                 <img src="<?php echo $imagem; ?>" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"><?php echo $titulo; ?></h5>
                   <p class="card-text"><?php echo $resumo; ?></p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <p class="text-danger">Valor: <b>R$ <?php echo $valor; ?></b></p>
+                  <p class="text-primary">Estoque: <?php echo $quantidade; ?></p>
+                  <a href="#" class="btn btn-primary">Ver Produto</a>
                 </div>
               </div>
             </div>
-
+            <?php $i++; }//$i=$i+1 ?>
           </div>
           
     </main>
