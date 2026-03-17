@@ -89,7 +89,7 @@ $i = 1;
 
           <div class="row">
             <?php while($i<=10){ ?>
-            <div class="col mt-2">
+            <div class="col mt-2"> 
               <div class="card" style="width: 18rem;">
                 <img src="<?php echo $imagem; ?>" class="card-img-top" alt="...">
                 <div class="card-body">
