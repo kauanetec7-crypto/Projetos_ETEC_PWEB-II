@@ -1,3 +1,14 @@
+<?php 
+/*
+mesma coisa que o uses do Delphi (ALtF11)
+*/
+require './controle/conexao.php';
+/*
+semelhante ao conected do Delphi (query)
+*/
+$pdo = conexao::conectar();
+$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+?>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">LogoDaLojinha</a>
